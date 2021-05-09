@@ -1,149 +1,161 @@
 body {
-	background: #EFEFBB;
-	background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
-	color: white;
-	margin: 0;
-	font-family: rubik;
+    background: #EFEFBB;
+    background: linear-gradient(to right, rgb(197, 230, 236), rgb(239, 187, 230));
+    color: white;
+    margin: 0;
+    font-family: rubik;
 }
 
 .container {
-	padding: 40px;
-	margin: 0 auto;
+    padding: 40px;
+    margin: 0 auto;
 }
 
 h1 {
-	text-align: center;
-	font-size: 54px;
+    text-align: center;
+    font-size: 54px;
 }
 
 .pokedex {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-	grid-gap: 20px;
-	padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
 }
 
 .card {
-	list-style: none;
-	padding: 40px;
-	color: #222;
-	text-align: center;
-	border-radius: 20px;
-	position: relative;
+    list-style: none;
+    padding: 40px;
+    color: #222;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
 }
 
 .card::after {
-	content: "";
-  display: block;
-  width: 50%;
-  height: 45%;
-  border-radius: 100%;
-  background-color: #fff;
-  opacity: .7;
-  position: absolute;
-  top: 15%;
-  left: 25%;
+    content: "";
+    display: block;
+    width: 50%;
+    height: 45%;
+    border-radius: 100%;
+    background-color: #fff;
+    opacity: .7;
+    position: absolute;
+    top: 15%;
+    left: 25%;
 }
 
 .steel {
-	background-color: #f4f4f4;
+    background-color: #D1D6DC;
 }
 
 .fire {
-	background-color: #FDDFDF;
+    background-color: #ab1f24;
 }
 
 .grass {
-	background-color: #DEFDE0;
+    background-color: #DEFDE0;
 }
 
 .electric {
-	background-color: #FCF7DE;
+    background-color: #E3E32B;
 }
 
-.water, .ice {
-	background-color: #DEF3FD;
+.water {
+    background-color: #1552E2;
+}
+
+.ice {
+    background-color: #7ccdf3;
 }
 
 .ground {
-	background-color: #f4e7da;
+    background-color: #A9702C;
 }
 
 .rock {
-	background-color: #d5d5d4;
+    background-color: #55271b;
 }
 
 .fairy {
-	background-color: #fceaff;
+    background-color: #971944;
 }
 
 .poison {
-	background-color: #98d7a5;
+    background-color: #5E2D88;
 }
 
 .bug {
-	background-color: #f8d5a3;
+    background-color: #1C4B27;
 }
 
 .dragon {
-	background-color: #97b3e6;
+    background-color: #1C4B27;
 }
 
 .psychic {
-	background-color: #eaeda1;
+    background-color: #803f8b;
 }
 
 .flying {
-	background-color: #F5F5F5;
+    background-color: #4A677D;
 }
 
 .fighting {
-	background-color: #E6E0D4;
+    background-color: #9c3f23;
 }
 
 .normal {
-	background-color: #F5F5F5;
+    background-color: #ac9299;
+}
+
+.dark {
+    background-color: #2e2e3b;
+}
+
+.ghost {
+    background-color: #33336B;
 }
 
 .card:hover {
-	animation: bounce 0.5s linear;
+    animation: bounce 0.5s linear;
 }
 
 .card-title {
-	text-transform: capitalize;
-	margin-bottom: 0px;
-	font-size: 32px;
-	font-weight: normal;
-	position: relative;
-	z-index: 2;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+    position: relative;
+    z-index: 2;
 }
 
 .card-subtitle {
-	margin-top: 5px;
-	color: #666;
-	font-weight: lighter;
-	position: relative;
-	z-index: 2;
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+    position: relative;
+    z-index: 2;
 }
 
 .card-image {
-	height: 180px;
-	position: relative;
-	z-index: 2;
+    height: 180px;
+    max-width: 280px;
+    position: relative;
+    z-index: 2;
 }
 
 @keyframes bounce {
-	20% {
-			transform: translateY(-6px);
-	}
-	40% {
-			transform: translateY(0px);
-	}
-
-	80% {
-			transform: translateY(-2px);
-	}
-	100% {
-			transform: translateY(0);
-	}
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
